@@ -1,0 +1,12 @@
+ext{
+    h1="world1"
+}
+task hello(){
+    doFirst{
+        println h1
+    }
+    println 'hello'
+    doLast{
+        println h2
+    }
+}

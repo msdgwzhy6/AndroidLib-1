@@ -35,5 +35,7 @@ dependencies {
     compile project(':refresh')
     compile project(':widget')
 }
+
 apply from: "bintrayUpload.gradle"
+
 

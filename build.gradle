@@ -16,6 +16,9 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url 'https://dl.bintray.com/yutianran/maven/'
+        }
         jcenter()
     }
 }
@@ -23,3 +26,5 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+
