@@ -3,6 +3,8 @@ package com.soubu.androidlib.application;
 import android.app.Application;
 import android.content.Context;
 
+import com.soubu.androidlib.util.SPUtil;
+import com.soubu.androidlib.util.ShowWidgetUtil;
 import com.soubu.androidlib.web.TestConfig;
 
 import java.util.concurrent.ExecutorService;
@@ -28,6 +30,10 @@ public class BaseApplication extends Application {
         super.onCreate();
         TestConfig.IS_TEST = true;
         instance = this;
+        initActivityCycle();
+        initScheduler();
+        SPUtil.init(this);
+        ShowWidgetUtil.register(this);
     }
 
     public static BaseApplication getInstance() {

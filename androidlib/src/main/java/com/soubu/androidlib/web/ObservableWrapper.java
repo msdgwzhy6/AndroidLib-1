@@ -30,8 +30,8 @@ public class ObservableWrapper<T> {
     public Subscription sendTo(final BaseSubscriber<T> subscriber,RxView<T> rxView, final ILoading loading) {
         if (!TestConfig.IS_TEST) {
             return observable
-                    .compose(new BaseTransformer<T>())
                     .compose(rxView.bindLife())
+                    .compose(new BaseTransformer<T>())
                     .doOnSubscribe(new Action0() {
                         @Override
                         public void call() {
