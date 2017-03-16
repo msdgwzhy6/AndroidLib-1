@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 带生命周期的Activity基类
+ *
  * 作者：余天然 on 2017/3/15 上午9:02
  */
 public abstract class LifeActivity extends AppCompatActivity {
