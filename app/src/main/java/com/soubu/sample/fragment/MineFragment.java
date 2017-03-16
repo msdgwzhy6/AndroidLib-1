@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 import android.widget.TextView;
 
 import com.soubu.sample.R;
-import com.soubu.ui.fragment.BaseFragment;
+import com.soubu.androidlib.fragment.BaseFragment;
 
 /**
  * 作者：余天然 on 2017/3/13 上午11:20

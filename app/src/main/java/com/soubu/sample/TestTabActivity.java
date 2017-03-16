@@ -8,7 +8,7 @@ import com.soubu.sample.fragment.ChatFragment;
 import com.soubu.sample.fragment.FindFragment;
 import com.soubu.sample.fragment.HomeFragment;
 import com.soubu.sample.fragment.MineFragment;
-import com.soubu.ui.activity.TabActivity;
+import com.soubu.androidlib.activity.TabActivity;
 
 /**
  * 作者：余天然 on 2017/3/15 上午11:29

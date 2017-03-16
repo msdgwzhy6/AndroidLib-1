@@ -1,1 +1,1 @@
-include ':app', ':recycler', ':common', ':ui', ':widget', ':refresh'
+include ':app', ':androidlib'

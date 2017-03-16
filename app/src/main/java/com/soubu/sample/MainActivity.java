@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 
-import com.soubu.ui.activity.StyleActivity;
-import com.soubu.ui.navigation.SettingNavigation;
+import com.soubu.androidlib.activity.StyleActivity;
+import com.soubu.androidlib.navigation.SettingNavigation;
 
 
 public class MainActivity extends StyleActivity<SettingNavigation> {
