@@ -11,7 +11,7 @@ import android.view.View;
  * <p>
  * 作者：余天然 on 2016/12/12 上午11:27
  */
-public abstract class LazyFragment extends BaseFragment {
+public abstract class LazyFragment extends StyleFragment {
 
     public boolean isPrepared = false;//控件是否准备好了
 

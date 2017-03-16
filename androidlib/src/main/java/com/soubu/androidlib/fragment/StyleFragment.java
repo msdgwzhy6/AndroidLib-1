@@ -9,14 +9,14 @@ import android.view.ViewGroup;
 /**
  * 作者：余天然 on 2017/3/13 下午2:44
  */
-public abstract class BaseFragment extends StateFragment {
+public abstract class StyleFragment extends StateFragment {
     private View rootView;
 
-    protected abstract int getContentViewId();
+    protected abstract int createLayoutId();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        int rootLayoutId = getContentViewId();
+        int rootLayoutId = createLayoutId();
         rootView = inflater.inflate(rootLayoutId, container, false);
         return rootView;
     }
@@ -28,4 +28,5 @@ public abstract class BaseFragment extends StateFragment {
     protected View getRootView() {
         return rootView;
     }
+
 }

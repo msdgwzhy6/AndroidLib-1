@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
 
 import com.soubu.androidlib.web.RxView;
+import com.trello.rxlifecycle.LifecycleTransformer;
 import com.trello.rxlifecycle.components.support.RxFragment;
 
 
@@ -13,7 +14,7 @@ import com.trello.rxlifecycle.components.support.RxFragment;
  * <p>
  * 作者：余天然 on 2017/3/13 下午1:55
  */
-public abstract class StateFragment extends RxFragment implements RxView {
+public  abstract class StateFragment extends RxFragment implements RxView {
     private static final String HIDDEN_STATE = "HIDDEN_STATE";
 
     @Override
@@ -66,5 +67,8 @@ public abstract class StateFragment extends RxFragment implements RxView {
 
     }
 
-
+    @Override
+    public LifecycleTransformer bindLife() {
+        return bindToLifecycle();
+    }
 }
