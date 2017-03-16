@@ -24,7 +24,7 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.yutianran.maven:androidlib:0.0.1.6'
+    compile 'com.yutianran.maven:androidlib:0.0.1.8'
     //测试库
     testCompile 'junit:junit:4.12'
     testCompile 'org.mockito:mockito-all:2.0.2-beta'
@@ -33,5 +33,7 @@ dependencies {
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
-
+    //辅助库
+    provided 'org.projectlombok:lombok:1.16.10'
+    provided 'javax.annotation:javax.annotation-api:1.3'
 }

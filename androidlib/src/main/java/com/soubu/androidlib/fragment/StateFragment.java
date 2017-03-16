@@ -2,15 +2,18 @@ package com.soubu.androidlib.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+
+import com.soubu.androidlib.web.RxView;
+import com.trello.rxlifecycle.components.support.RxFragment;
+
 
 /**
  * 使用hide/show时，由Fragment自己来管理自己的Hidden状态
  * <p>
  * 作者：余天然 on 2017/3/13 下午1:55
  */
-public abstract class StateFragment extends Fragment {
+public abstract class StateFragment extends RxFragment implements RxView {
     private static final String HIDDEN_STATE = "HIDDEN_STATE";
 
     @Override
